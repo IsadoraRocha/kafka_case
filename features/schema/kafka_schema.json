@@ -1,0 +1,123 @@
+{
+  "description" : "Json da VR",
+  "type" : "object",
+  "properties": {
+    "products" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "nome": {
+            "type": "string"
+          },
+          "exibirRede": {
+            "type": "boolean"
+          },
+          "adquirirCartao": {
+            "type": "boolean"
+          },
+          "percentualCartao": {
+            "type": "number"
+          },
+          "produtoRefeicao": {
+            "type": "boolean"
+          },
+          "produtoAlimentacao": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "operatingDays" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties": {
+          "key": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "typeOfEstablishment" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "videos" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "key": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "dominios" : {
+      "type" : "object",
+      "properties" : {
+        "TIPO_LOGRADOURO" : {
+          "type": "array",
+          "items" : {
+            "type" : "object",
+            "properties": {
+              "key": {
+                "type": "number"
+              },
+              "name": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "SEXO" : {
+          "type": "array",
+          "items" : {
+            "type" : "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "require" : "typeOfEstablishment"
+}

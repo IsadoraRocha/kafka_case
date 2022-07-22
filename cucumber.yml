@@ -1,0 +1,5 @@
+default: -p report -p config
+
+report:  --format json --out=report/report.json --format progress
+
+config: ENVIRONMENT=config

@@ -1,0 +1,66 @@
+[
+  {
+    "uri": "features/specifications/bdd.feature",
+    "id": "consulta-produtos-e-estabelecimentos",
+    "keyword": "Funcionalidade",
+    "name": "Consulta produtos e estabelecimentos",
+    "description": "",
+    "line": 3,
+    "elements": [
+      {
+        "id": "consulta-produtos-e-estabelecimentos;consultar-produtos-e-estabelecimentos-da-vr",
+        "keyword": "Cenario",
+        "name": "Consultar produtos e estabelecimentos da VR",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@teste",
+            "line": 5
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15300
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que realizo uma consulta de produtos e estabeleciomentos da VR",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/given_steps/given.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 566069500
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido que houve sucesso na consulta",
+            "line": 8,
+            "output": [
+              "{\n  \"key\": \"REFEICAO|HAMBURGUER\",\n  \"name\": \"HAMBUERGUERIA\",\n  \"label\": \"Refeição - Hamburgueria\"\n}"
+            ],
+            "match": {
+              "location": "features/step_definitions/then_steps/then.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13620500
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
