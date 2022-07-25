@@ -1,16 +1,16 @@
 [
   {
     "uri": "features/specifications/bdd.feature",
-    "id": "consulta-produtos-e-estabelecimentos",
+    "id": "consulta-de-mensagens-em-tópico-do-kafka",
     "keyword": "Funcionalidade",
-    "name": "Consulta produtos e estabelecimentos",
+    "name": "Consulta de mensagens em tópico do Kafka",
     "description": "",
     "line": 3,
     "elements": [
       {
-        "id": "consulta-produtos-e-estabelecimentos;consultar-produtos-e-estabelecimentos-da-vr",
+        "id": "consulta-de-mensagens-em-tópico-do-kafka;consultar-a-publicação-em-mensagens-no-tópico-do-kafka-local",
         "keyword": "Cenario",
-        "name": "Consultar produtos e estabelecimentos da VR",
+        "name": "Consultar a publicação em mensagens no tópico do Kafka local",
         "description": "",
         "line": 6,
         "type": "scenario",
@@ -27,36 +27,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15300
+              "duration": 1175431000
             }
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "que realizo uma consulta de produtos e estabeleciomentos da VR",
+            "name": "que realizo o POST de uma mensagem qualquer",
             "line": 7,
             "match": {
               "location": "features/step_definitions/given_steps/given.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 566069500
+              "duration": 2724335000
             }
           },
           {
             "keyword": "Entao ",
-            "name": "valido que houve sucesso na consulta",
+            "name": "valido que houve a publicação dessa mensagem no tópico do kafka local",
             "line": 8,
-            "output": [
-              "{\n  \"key\": \"REFEICAO|HAMBURGUER\",\n  \"name\": \"HAMBUERGUERIA\",\n  \"label\": \"Refeição - Hamburgueria\"\n}"
-            ],
             "match": {
               "location": "features/step_definitions/then_steps/then.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 13620500
+              "duration": 60000
             }
           }
         ]

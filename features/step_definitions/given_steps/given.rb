@@ -1,3 +1,6 @@
 Dado ('que realizo o POST de uma mensagem qualquer') do
-  @response = @kafka_test.post_message
+  #realiza o POST da requisicao para gerar o evento
+  @response = @post.post_message
+  #valida se o response code eh igual a 200
+  expect(@response.code).to eq(200)
 end

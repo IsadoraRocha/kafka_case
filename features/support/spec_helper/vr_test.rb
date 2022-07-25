@@ -2,6 +2,6 @@
 
 module VRPATTest
   def vr_test
-    VRPATTest :: KafkaTestService.new
+    VRPATTest :: PostService.new
   end
 end

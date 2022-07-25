@@ -1,3 +1,4 @@
 Before do
-  @kafka_test = KafkaTestService.new
+  @post = PostService.new
+  @kafka_test = KafkaTest.new
 end
