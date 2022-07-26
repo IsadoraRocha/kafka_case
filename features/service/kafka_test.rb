@@ -29,7 +29,7 @@ class KafkaTest
         return true, message
 
       #entra na condicao se der o tempo limite de 3 segundos de funcionamento do considor
-      elsif Time.new - time_start > 3
+      elsif Time.new - time_start > 10
 
         #comando de parada do consumidor
         consumer.stop

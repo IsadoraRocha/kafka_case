@@ -7,7 +7,7 @@ at_exit do
     config.report_types = [:html]
     config.voice_commands = true
     config.color = 'grey'
-    config.additional_info = { DateTime: DateTime.now, Nome: 'Teste VR' }
+    config.additional_info = { DateTime: DateTime.now, Nome: 'Teste Para o tcc' }
   end
   ReportBuilder.build_report
 end

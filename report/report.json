@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15000
+              "duration": 16000
             }
           }
         ],
@@ -37,14 +37,14 @@
             "name": "que realizo o POST de uma mensagem qualquer",
             "line": 7,
             "output": [
-              "Chuck Norris can binary search unsorted data."
+              "Chuck Norris doesn't believe in floating point numbers because they can't be typed on his binary keyboard."
             ],
             "match": {
               "location": "features/step_definitions/given_steps/given.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 16127000
+              "duration": 31868000
             }
           },
           {
@@ -52,15 +52,14 @@
             "name": "valido que houve a publicação dessa mensagem no tópico do kafka local",
             "line": 8,
             "output": [
-              "Mensagem encontrada: Chuck Norris can instantiate an abstract class."
+              "Mensagem encontrada: Chuck Norris doesn't believe in floating point numbers because they can't be typed on his binary keyboard."
             ],
             "match": {
               "location": "features/step_definitions/then_steps/then.rb:1"
             },
             "result": {
-              "status": "failed",
-              "error_message": "expected: truthy value\n     got: false (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/then_steps/then.rb:4:in `\"valido que houve a publicação dessa mensagem no tópico do kafka local\"'\nfeatures/specifications/bdd.feature:8:in `Entao valido que houve a publicação dessa mensagem no tópico do kafka local'",
-              "duration": 5118252000
+              "status": "passed",
+              "duration": 5120164000
             }
           }
         ]
