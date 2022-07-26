@@ -1,4 +1,4 @@
-# httparty_case
+# Kafka teste case
 
 ## Realizando instalação das gems
 
