@@ -1,6 +1,6 @@
-Entao ('valido que houve a publicação dessa mensagem no tópico do kafka local') do
+Entao ('valido que houve o consumo dessa mensagem no tópico do kafka local em {float}') do |seg|
   # chama a funcao de consumo das mensagens do topico do kafka
-  @message = @kafka_test.read_message
+  @message = @kafka_test.read_message(seg)
 
   # mostra a mensagem encontrada na leitura do topico
   puts "Mensagem encontrada: " + @message.last

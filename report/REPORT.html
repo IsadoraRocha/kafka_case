@@ -64,8 +64,8 @@
         
     
 
-    <h5>Consultar a publicação em mensagens no tópico do Kafka local (5.152s)</h5>
-    features/specifications/bdd.feature:6
+    <h5>Consultar a publicação em mensagens no tópico do Kafka local com sucesso (13.373s)</h5>
+    features/specifications/bdd.feature:12
 
     
         
@@ -83,7 +83,7 @@
           <li class="collection-item step passed">
   
 
-  <b>Dado </b> que realizo o POST de uma mensagem qualquer (0.032s)
+  <b>Dado </b> que realizo o POST de uma mensagem qualquer (1.239s)
 
   
 
@@ -93,7 +93,7 @@
   
   
     
-        <pre>Chuck Norris doesn't believe in floating point numbers because they can't be typed on his binary keyboard.</pre>
+        <pre>Chuck Norris's beard can type 140 wpm.</pre>
     
 
 
@@ -109,7 +109,7 @@
           <li class="collection-item step passed">
   
 
-  <b>Entao </b> valido que houve a publicação dessa mensagem no tópico do kafka local (5.120s)
+  <b>Entao </b> valido que houve o consumo dessa mensagem no tópico do kafka local em 20.0 (12.134s)
 
   
 
@@ -119,10 +119,110 @@
   
   
     
-        <pre>Mensagem encontrada: Chuck Norris doesn't believe in floating point numbers because they can't be typed on his binary keyboard.</pre>
+        <pre>Mensagem encontrada: Chuck Norris's beard can type 140 wpm.</pre>
     
 
 
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s1" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@teste</div>
+        
+    
+
+    <h5>Consultar a publicação em mensagens no tópico do Kafka local com sucesso (38.402s)</h5>
+    features/specifications/bdd.feature:13
+
+    
+        
+            
+
+
+
+
+
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que realizo o POST de uma mensagem qualquer (0.006s)
+
+  
+
+  
+
+  
+  
+  
+    
+        <pre>Chuck Norris has root access to your system.</pre>
+    
+
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> valido que houve o consumo dessa mensagem no tópico do kafka local em 0.0001 (38.396s)
+
+  
+
+  
+
+  
+  
+  
+    
+        <pre>Mensagem encontrada: Chuck Norris's beard can type 140 wpm.</pre>
+    
+
+
+
+    
+    
+    
+    <pre>expected: truthy value
+     got: false (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/then_steps/then.rb:9:in `&quot;valido que houve o consumo dessa mensagem no tópico do kafka local em {float}&quot;&#39;
+features/specifications/bdd.feature:13:in `Entao valido que houve o consumo dessa mensagem no tópico do kafka local em 0.0001&#39;
+features/specifications/bdd.feature:8:in `Entao valido que houve o consumo dessa mensagem no tópico do kafka local em &lt;seg&gt;&#39;</pre>
 
 
 
@@ -154,6 +254,8 @@
         
         $('#g0f0s1').modal();
         
+        $('#g0f0s2').modal();
+        
     });
 </script>
 
@@ -180,11 +282,11 @@
   <div class="col m4 s12">
     <table id="metaData" class="bordered">
       <tbody>
-      <tr><th>Total Time</th><td>5.152s</td></tr>
+      <tr><th>Total Time</th><td>51.775s</td></tr>
       
           <tr>
             <th>DateTime</th>
-            <td>2022-07-25T22:15:10-03:00</td>
+            <td>2022-07-26T01:08:45-03:00</td>
           </tr>
       
           <tr>
@@ -203,17 +305,21 @@
           <ul class="featureList collapsible popout" data-collapsible="expandable">
   
       
-      <li class="feature working">
+      <li class="feature broken">
   <div class="collapsible-header grey lighten-1 waves-effect waves-light">
     <i class="material-icons">featured_play_list</i>
-    <b>Funcionalidade</b>&nbsp;Consulta de mensagens em tópico do Kafka&nbsp;(5.152s)
+    <b>Funcionalidade</b>&nbsp;Consulta de mensagens em tópico do Kafka&nbsp;(51.775s)
   </div>
 
   <div class="collapsible-body grey lighten-4">
     <div class="collection scenarioList grey">
       
         <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s0">
-          <b>Cenario</b> Consultar a publicação em mensagens no tópico do Kafka local&nbsp;(5.152s)
+          <b>Esquema do Cenario</b> Consultar a publicação em mensagens no tópico do Kafka local com sucesso&nbsp;(13.373s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s1">
+          <b>Esquema do Cenario</b> Consultar a publicação em mensagens no tópico do Kafka local com sucesso&nbsp;(38.402s)
         </a>
       
     </div>
@@ -250,7 +356,7 @@
 </td>
 
 <td class="hoverable modal-trigger white-text" data-target="g0f0s0">
-  Consultar a publicação em mensagens no tópico do Kafka local
+  Consultar a publicação em mensagens no tópico do Kafka local com sucesso
 </td>
 
 <td class="hide">
@@ -273,6 +379,38 @@
 
           </tr>
       
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Consulta de mensagens em tópico do Kafka
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s1">
+  Consultar a publicação em mensagens no tópico do Kafka local com sucesso
+</td>
+
+<td class="hide">
+  
+      
+          @teste. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      expected: truthy value
+  
+</td>
+
+          </tr>
+      
   
   </tbody>
 </table>
@@ -281,6 +419,31 @@
 
         <div id="errors" class="col s12 grey lighten-5">
           <ul class="errorList collapsible popout" data-collapsible="expandable">
+  
+      <li class="error">
+  <div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
+    <i class="material-icons">bug_report</i>expected: truthy value
+  </div>
+
+  <div class="collapsible-body grey lighten-4">
+    <div class="collection failedScenarioList">
+      
+          
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario grey lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s1">
+                        <i class="material-icons">highlight_off</i>&nbsp;Consultar a publicação em mensagens no tópico do Kafka local com sucesso
+                      </a>
+                  
+              
+          
+      
+    </div>
+  </div>
+</li>
+
   
 </ul>
 

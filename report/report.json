@@ -5,19 +5,25 @@
     "keyword": "Funcionalidade",
     "name": "Consulta de mensagens em tópico do Kafka",
     "description": "",
-    "line": 3,
+    "line": 4,
+    "tags": [
+      {
+        "name": "@teste",
+        "line": 3
+      }
+    ],
     "elements": [
       {
-        "id": "consulta-de-mensagens-em-tópico-do-kafka;consultar-a-publicação-em-mensagens-no-tópico-do-kafka-local",
-        "keyword": "Cenario",
-        "name": "Consultar a publicação em mensagens no tópico do Kafka local",
+        "id": "consulta-de-mensagens-em-tópico-do-kafka;consultar-a-publicação-em-mensagens-no-tópico-do-kafka-local-com-sucesso;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Consultar a publicação em mensagens no tópico do Kafka local com sucesso",
         "description": "",
-        "line": 6,
+        "line": 12,
         "type": "scenario",
         "tags": [
           {
             "name": "@teste",
-            "line": 5
+            "line": 3
           }
         ],
         "before": [
@@ -27,7 +33,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16000
+              "duration": 25000
             }
           }
         ],
@@ -37,29 +43,87 @@
             "name": "que realizo o POST de uma mensagem qualquer",
             "line": 7,
             "output": [
-              "Chuck Norris doesn't believe in floating point numbers because they can't be typed on his binary keyboard."
+              "Chuck Norris's beard can type 140 wpm."
             ],
             "match": {
               "location": "features/step_definitions/given_steps/given.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 31868000
+              "duration": 1238526000
             }
           },
           {
             "keyword": "Entao ",
-            "name": "valido que houve a publicação dessa mensagem no tópico do kafka local",
+            "name": "valido que houve o consumo dessa mensagem no tópico do kafka local em 20.0",
             "line": 8,
             "output": [
-              "Mensagem encontrada: Chuck Norris doesn't believe in floating point numbers because they can't be typed on his binary keyboard."
+              "Mensagem encontrada: Chuck Norris's beard can type 140 wpm."
             ],
             "match": {
               "location": "features/step_definitions/then_steps/then.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 5120164000
+              "duration": 12134408000
+            }
+          }
+        ]
+      },
+      {
+        "id": "consulta-de-mensagens-em-tópico-do-kafka;consultar-a-publicação-em-mensagens-no-tópico-do-kafka-local-com-sucesso;;3",
+        "keyword": "Esquema do Cenario",
+        "name": "Consultar a publicação em mensagens no tópico do Kafka local com sucesso",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@teste",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que realizo o POST de uma mensagem qualquer",
+            "line": 7,
+            "output": [
+              "Chuck Norris has root access to your system."
+            ],
+            "match": {
+              "location": "features/step_definitions/given_steps/given.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5943000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido que houve o consumo dessa mensagem no tópico do kafka local em 0.0001",
+            "line": 8,
+            "output": [
+              "Mensagem encontrada: Chuck Norris's beard can type 140 wpm."
+            ],
+            "match": {
+              "location": "features/step_definitions/then_steps/then.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "expected: truthy value\n     got: false (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/then_steps/then.rb:9:in `\"valido que houve o consumo dessa mensagem no tópico do kafka local em {float}\"'\nfeatures/specifications/bdd.feature:13:in `Entao valido que houve o consumo dessa mensagem no tópico do kafka local em 0.0001'\nfeatures/specifications/bdd.feature:8:in `Entao valido que houve o consumo dessa mensagem no tópico do kafka local em <seg>'",
+              "duration": 38396029000
             }
           }
         ]

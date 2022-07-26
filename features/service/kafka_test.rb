@@ -1,6 +1,7 @@
 class KafkaTest
   # require "kafka"
-  def read_message
+  def read_message(temp)
+
     #caminho do broker do kafka
     kafka = Kafka.new(["localhost:9092"])
 
@@ -21,7 +22,6 @@ class KafkaTest
 
       #printa no console a mensagem que foi consumida
       puts message
-
       #entra na condicao se a mensagem lida for igual a que for enviada na requisição
       if message.eql?($message)
 
@@ -29,7 +29,7 @@ class KafkaTest
         return true, message
 
       #entra na condicao se der o tempo limite de 3 segundos de funcionamento do considor
-      elsif Time.new - time_start > 10
+      elsif Time.new - time_start > temp
 
         #comando de parada do consumidor
         consumer.stop

@@ -5,7 +5,6 @@ class PostService
 
   # variavel global que abriga mensagens criadas de forma aleatoria
   # para serem usadas no envio da requisicao POST
-  $message = Faker::ChuckNorris.fact
 
   def initialize
     #criacao do header da requisicao
@@ -14,6 +13,7 @@ class PostService
 
   #criacao do corpo da mensagem
   def create_body
+    $message = Faker::ChuckNorris.fact
     return {:msg => $message}.to_json
   end
 
