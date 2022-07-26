@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23000
+              "duration": 15000
             }
           }
         ],
@@ -36,24 +36,31 @@
             "keyword": "Dado ",
             "name": "que realizo o POST de uma mensagem qualquer",
             "line": 7,
+            "output": [
+              "Chuck Norris can binary search unsorted data."
+            ],
             "match": {
               "location": "features/step_definitions/given_steps/given.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 27449000
+              "duration": 16127000
             }
           },
           {
             "keyword": "Entao ",
             "name": "valido que houve a publicação dessa mensagem no tópico do kafka local",
             "line": 8,
+            "output": [
+              "Mensagem encontrada: Chuck Norris can instantiate an abstract class."
+            ],
             "match": {
               "location": "features/step_definitions/then_steps/then.rb:1"
             },
             "result": {
-              "status": "passed",
-              "duration": 182857575000
+              "status": "failed",
+              "error_message": "expected: truthy value\n     got: false (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/then_steps/then.rb:4:in `\"valido que houve a publicação dessa mensagem no tópico do kafka local\"'\nfeatures/specifications/bdd.feature:8:in `Entao valido que houve a publicação dessa mensagem no tópico do kafka local'",
+              "duration": 5118252000
             }
           }
         ]

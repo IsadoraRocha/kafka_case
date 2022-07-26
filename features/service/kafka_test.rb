@@ -19,10 +19,10 @@ class KafkaTest
       message = message.value
       puts message
       if message.eql?($message)
-        return true
-      elsif Time.new - time_start > 5
+        return true, message
+      elsif Time.new - time_start > 3
         consumer.stop
-        return false
+        return false, message
       end
     end
   end

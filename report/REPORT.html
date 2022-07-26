@@ -64,7 +64,7 @@
         
     
 
-    <h5>Consultar a publicação em mensagens no tópico do Kafka local (3m 2.89s)</h5>
+    <h5>Consultar a publicação em mensagens no tópico do Kafka local (5.134s)</h5>
     features/specifications/bdd.feature:6
 
     
@@ -83,7 +83,7 @@
           <li class="collection-item step passed">
   
 
-  <b>Dado </b> que realizo o POST de uma mensagem qualquer (0.027s)
+  <b>Dado </b> que realizo o POST de uma mensagem qualquer (0.016s)
 
   
 
@@ -92,6 +92,10 @@
   
   
   
+    
+        <pre>Chuck Norris can binary search unsorted data.</pre>
+    
+
 
 
 
@@ -102,19 +106,31 @@
 </li>
 
       
-          <li class="collection-item step passed">
+          <li class="collection-item step failed">
   
 
-  <b>Entao </b> valido que houve a publicação dessa mensagem no tópico do kafka local (3m 2.86s)
-
-  
+  <b>Entao </b> valido que houve a publicação dessa mensagem no tópico do kafka local (5.118s)
 
   
 
   
-  
-  
 
+  
+  
+  
+    
+        <pre>Mensagem encontrada: Chuck Norris can instantiate an abstract class.</pre>
+    
+
+
+
+    
+    
+    
+    <pre>expected: truthy value
+     got: false (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/then_steps/then.rb:4:in `&quot;valido que houve a publicação dessa mensagem no tópico do kafka local&quot;&#39;
+features/specifications/bdd.feature:8:in `Entao valido que houve a publicação dessa mensagem no tópico do kafka local&#39;</pre>
 
 
 
@@ -172,11 +188,11 @@
   <div class="col m4 s12">
     <table id="metaData" class="bordered">
       <tbody>
-      <tr><th>Total Time</th><td>3m 2.89s</td></tr>
+      <tr><th>Total Time</th><td>5.134s</td></tr>
       
           <tr>
             <th>DateTime</th>
-            <td>2022-07-25T21:51:44-03:00</td>
+            <td>2022-07-25T21:59:57-03:00</td>
           </tr>
       
           <tr>
@@ -195,17 +211,17 @@
           <ul class="featureList collapsible popout" data-collapsible="expandable">
   
       
-      <li class="feature working">
+      <li class="feature broken">
   <div class="collapsible-header grey lighten-1 waves-effect waves-light">
     <i class="material-icons">featured_play_list</i>
-    <b>Funcionalidade</b>&nbsp;Consulta de mensagens em tópico do Kafka&nbsp;(3m 2.89s)
+    <b>Funcionalidade</b>&nbsp;Consulta de mensagens em tópico do Kafka&nbsp;(5.134s)
   </div>
 
   <div class="collapsible-body grey lighten-4">
     <div class="collection scenarioList grey">
       
-        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s0">
-          <b>Cenario</b> Consultar a publicação em mensagens no tópico do Kafka local&nbsp;(3m 2.89s)
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s0">
+          <b>Cenario</b> Consultar a publicação em mensagens no tópico do Kafka local&nbsp;(5.134s)
         </a>
       
     </div>
@@ -236,7 +252,7 @@
   
       
           
-          <tr class="passed">
+          <tr class="failed">
             <td class="hide-on-small-only">
   Consulta de mensagens em tópico do Kafka
 </td>
@@ -254,12 +270,14 @@
 </td>
 
 <td class="uppercase">
-  passed
+  failed
 </td>
 
 
 
 <td class="hide-on-small-only">
+  
+      expected: truthy value
   
 </td>
 
@@ -273,6 +291,29 @@
 
         <div id="errors" class="col s12 grey lighten-5">
           <ul class="errorList collapsible popout" data-collapsible="expandable">
+  
+      <li class="error">
+  <div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
+    <i class="material-icons">bug_report</i>expected: truthy value
+  </div>
+
+  <div class="collapsible-body grey lighten-4">
+    <div class="collection failedScenarioList">
+      
+          
+              
+                  
+                      <a class="collection-item failedScenario grey lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s0">
+                        <i class="material-icons">highlight_off</i>&nbsp;Consultar a publicação em mensagens no tópico do Kafka local
+                      </a>
+                  
+              
+          
+      
+    </div>
+  </div>
+</li>
+
   
 </ul>
 
